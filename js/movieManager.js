@@ -15,6 +15,6 @@ export const getAPi =() =>{
 }
 const creatMoviesList =(_ar) =>{
     _ar.forEach(item =>{
-        let movie = new AllMovies("#id_main",item);
+        let movie = new AllMovies("#id_row",item);
     });
 }

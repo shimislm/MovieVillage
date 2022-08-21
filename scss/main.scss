@@ -1,0 +1,12 @@
+main{
+    .row{
+        .img-box{
+            transition: 800ms;
+            cursor: pointer;
+        }
+        .img-box:hover{
+            transform: scale(1.2);
+        }
+    }
+
+}

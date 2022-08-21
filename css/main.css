@@ -1,0 +1,7 @@
+main .row .img-box {
+  transition: 800ms;
+  cursor: pointer;
+}
+main .row .img-box:hover {
+  transform: scale(1.2);
+}/*# sourceMappingURL=main.css.map */
