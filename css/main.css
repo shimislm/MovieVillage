@@ -1,3 +1,11 @@
+:root {
+  --black: #333;
+}
+
+body {
+  background: var(--black);
+}
+
 main .row .img-box {
   transition: 800ms;
   cursor: pointer;
