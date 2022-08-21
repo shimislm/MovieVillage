@@ -1,15 +1,28 @@
 :root {
   --black: #333;
+  --white: #fff;
+  --red: #CD5C5C;
 }
 
 body {
   background: var(--black);
 }
 
+header {
+  font-size: 0.8em;
+  background: var(--red);
+}
+header nav ul li {
+  padding: 0 12px;
+  cursor: pointer;
+}
+
 main .row .img-box {
+  -webkit-transition: 800ms;
   transition: 800ms;
   cursor: pointer;
 }
 main .row .img-box:hover {
-  transform: scale(1.1);
-}/*# sourceMappingURL=main.css.map */
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}

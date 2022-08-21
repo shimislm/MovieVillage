@@ -1,8 +1,24 @@
 :root{
     --black : #333;
+    --white : #fff;
+    --red : #CD5C5C;
 }
 body{
     background: var(--black);
+}
+header{
+    font-size: 0.8em;
+    background: var(--red);
+    nav{
+        .logo{
+        }
+        ul{
+            li{
+                padding: 0 12px;
+                cursor: pointer;
+            }
+        }
+    }
 }
 main{
     .row{
