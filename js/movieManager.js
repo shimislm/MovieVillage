@@ -9,6 +9,7 @@ export const getAPi =() =>{
     fetch(url)
     .then(resp => resp.json())
     .then(data => {
+      console.log(data.Search)
       creatMoviesList(data.Search);
     })
 }

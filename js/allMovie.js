@@ -11,7 +11,21 @@ export default class AllMovies{
     render(){
         let div = document.createElement("div")
         div.className = "col card mb-3"
-        document.querySelector(this.parent)
-        window.location.href(`vodSingle.html?id=${this.id}`) ;
+        document.querySelector(this.parent).append(div)
+        div.innerHTML += 
+        `
+        <div class="row g-0">
+        <div class="col-md-3">
+          <img src="${this.Poster}" class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">${this.Title}</h5>
+            <p class="card-text"><small class="text-muted">${this.Year}</small></p>
+          </div>
+        </div>
+      </div>
+        `
+        // window.location.href = `vodSingle.html?id=${this.id}` ;
     }
 }
