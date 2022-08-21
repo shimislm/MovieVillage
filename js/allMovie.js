@@ -1,4 +1,4 @@
-export default class Movies{
+export default class AllMovies{
     constructor(_parent , _item){
         this.parent= _parent;
         this.Title = _item.Title;
@@ -12,6 +12,6 @@ export default class Movies{
         let div = document.createElement("div")
         div.className = "col card mb-3"
         document.querySelector(this.parent)
-
+        window.location.href(`vodSingle.html?id=${this.id}`) ;
     }
 }

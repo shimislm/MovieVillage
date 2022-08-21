@@ -1,3 +1,4 @@
+import AllMovies from "./allMovie.js";
 
 const movie_ar =[];
 export const getAPi =() =>{
@@ -13,6 +14,6 @@ export const getAPi =() =>{
 }
 const creatMoviesList =(_ar) =>{
     _ar.forEach(item =>{
-        let movie = new AllMovie("#id_main",item);
+        let movie = new AllMovies("#id_main",item);
     });
 }
