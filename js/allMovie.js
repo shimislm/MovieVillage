@@ -17,9 +17,12 @@ export default class AllMovies{
         <div class="h-100 img-box">
            <img src="${this.image}"
             alt="dd" width="100%" class="h-100 overflow-hidden">
-          <small class="text-muted d-flex justify-content-center">${this.title}</small>
+          <small class="text-white d-flex justify-content-center">${this.title}</small>
           </div>
         `
-        // window.location.href = `vodSingle.html?id=${this.id}` ;
+        div.addEventListener("click",()=>{
+          window.location.href = `pages/movie_info.html?id=${this.id}` ;
+        })
+        // 
     }
 }
