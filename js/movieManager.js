@@ -1,3 +1,4 @@
+
 const movie_ar =[];
 export const getAPi =() =>{
     // input.value="";
@@ -10,4 +11,8 @@ export const getAPi =() =>{
       creatMoviesList(data.Search);
     })
 }
-const 
+const creatMoviesList =(_ar) =>{
+    _ar.forEach(item =>{
+        let movie = new AllMovie("#id_main",item);
+    });
+}
