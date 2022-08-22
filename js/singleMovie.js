@@ -26,7 +26,7 @@ const updateUi = (_movieItem) => {
   div.innerHTML =
     `
         <div class="description row row-cols-md-2">
-            <div class="col">
+            <div class="col h-100">
             <h2 class="display-5 fst-italic my-5">Title : ${_movieItem.Title}</h2>
             <h5>Diractor: ${_movieItem.Director}</h5>
             <h5>IMDB: ${_movieItem.imdbRating}</h5>
@@ -35,7 +35,7 @@ const updateUi = (_movieItem) => {
             <h6 class="mb-5">Duration: ${_movieItem.Runtime}</h6>
             <p>${_movieItem.Plot}</p>
             </div>
-            <div class="imageBox col justify-content-md-end">
+            <div class="imageBox col justify-content-md-end h-100">
                 <img src="${_movieItem.Poster}"
                     alt="${_movieItem.Title}" height="100%">
                     </div>

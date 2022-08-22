@@ -4,15 +4,14 @@ main{
         color: whitesmoke;
         background: linear-gradient(155deg, rgba(36,0,0,0.7931547619047619) 29%, rgba(241,25,25,0.6755077030812324) 85%);
         box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-        min-height: 600px;
+        // min-height: 600px;
         border-radius: 16px;
         border:whitesmoke 2px solid;
         overflow: hidden;
         .imageBox{
-            border: 1px solid black;
+            margin: 0 ;
             padding: 0;
             display: flex;
-            height: 600px;
             justify-content: center;
             background: transparent;
             border-end-end-radius:24px ;
