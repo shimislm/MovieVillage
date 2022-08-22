@@ -7,15 +7,11 @@ main .container {
   overflow: hidden;
 }
 main .container .imageBox {
-  margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   background: transparent;
   border-end-end-radius: 24px;
   border-start-start-radius: 24px;
-  height: 100%;
-}
-main .container h5 {
-  margin-bottom: 20px;
+  min-height: 100%;
 }/*# sourceMappingURL=movieInfo.css.map */
