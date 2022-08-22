@@ -41,7 +41,7 @@ const updateUi = (_movieItem) => {
             <h6 class="mb-5">Duration: ${_movieItem.Runtime}</h6>
             <p>${_movieItem.Plot}</p>
             </div>
-            <div class="imageBox col">
+            <div class="imageBox col justify-content-md-end">
                 <img src="${_movieItem.Poster}"
                     alt="${_movieItem.Title}" height="100%">
                     </div>
