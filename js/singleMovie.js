@@ -20,6 +20,7 @@ const doApi = () => {
 // }
 
 const updateUi = (_movieItem) => {
+  console.log(_movieItem)
   let div = document.createElement("div");
   div.className = "bg-danger container";
   document.querySelector("#id_main").append(div);
