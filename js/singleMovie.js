@@ -7,16 +7,11 @@ const doApi = () => {
   const urlParams = new URLSearchParams(window.location.search);
   // .html?id=
   let idMovie = urlParams.get("id");
-  console.log("im here")
   console.log(idMovie)
   if (idMovie) {
     let url = `http://www.omdbapi.com/?i=${idMovie}&apikey=5a292f28`;
-    fetch(url)
-      .then(resp => resp.json())
-      .then(data => {
-        console.log(data);
-        updateUi(data);
-      })
+    axios.get(url)
+    .then(resp => updateUi(resp.data))
   }
 }
 
