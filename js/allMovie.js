@@ -21,7 +21,8 @@ export default class AllMovies{
           </div>
         `
         div.addEventListener("click",()=>{
-          location.href = `pages/movie_info.html?id=${this.id}`;
+          window.open(`pages/movie_info.html?id=${this.id}`,'_self');
+          // window.open = `pages/movie_info.html?id=${this.id}`;
         })
         // 
     }
