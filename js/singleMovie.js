@@ -9,8 +9,14 @@ const doApi = () => {
   let idMovie = urlParams.get("id");
   if (idMovie) {
     let url = `http://www.omdbapi.com/?i=${idMovie}&apikey=26dac8a0`;
-    axios.get(url)
-    .then(resp => updateUi(resp.data))
+    // axios.get(url)
+    // .then(resp => updateUi(resp.data))
+    fetch(url)
+    .then(resp => resp.json())
+    .then(data => {
+      console.log(data)
+      updateUi(data);
+    })
   }
 }
 
@@ -20,7 +26,6 @@ const doApi = () => {
 // }
 
 const updateUi = (_movieItem) => {
-  console.log(_movieItem)
   let div = document.createElement("div");
   div.className = "bg-danger container";
   document.querySelector("#id_main").append(div);
