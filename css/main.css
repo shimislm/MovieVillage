@@ -47,11 +47,9 @@ header nav ul li {
 }
 
 main .row .img-box {
-  -webkit-transition: 800ms;
   transition: 800ms;
   cursor: pointer;
 }
 main .row .img-box:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
