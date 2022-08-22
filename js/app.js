@@ -1,7 +1,9 @@
-import { getAPi } from "./movieManager.js";
+import { getApi } from "./movieManager.js";
+import { declareEvents } from "./viewEvents.js";
 
 const init =()=>{
-    getAPi();
+    getApi("red");
+    declareEvents();
 }
 
 init();

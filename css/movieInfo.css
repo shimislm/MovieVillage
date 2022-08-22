@@ -1,9 +1,6 @@
-body{
-  box-sizing: border-box;
-  background-image: url("https://live.staticflickr.com/8868/18277527139_ef3d5a910f_b.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+main .imageBox {
+  border: 1px solid black;
+  height: 100%;
 }
 main .container {
   color: whitesmoke;
@@ -27,4 +24,6 @@ main .container .imageBox{
 }
 main .container h5{
   margin-bottom: 20px;
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  min-height: 540px;
 }

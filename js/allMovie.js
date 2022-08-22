@@ -10,7 +10,7 @@ export default class AllMovies{
     }
     render(){
         let div = document.createElement("div")
-        div.className = "col-md-1 col-xl-1 col-6 p-3"
+        div.className = "col-md-3 col-xl-1 col-6 p-3"
         document.querySelector(this.parent).append(div)
         div.innerHTML += 
         `
