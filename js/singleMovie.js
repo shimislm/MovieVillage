@@ -31,20 +31,20 @@ const updateUi = (_movieItem) => {
   document.querySelector("#id_main").append(div);
   div.innerHTML =
     `
-        <div class="description row row-cols-md-2">
-            <div class="col h-100">
+        <div class="description row row-cols-md-2 h-100">
+        <div class="imageBox col justify-content-md-center ">
+         <img class="" src="${_movieItem.Poster}"
+             alt="${_movieItem.Title}">
+         </div>
+            <div class=" col">
             <h2 class="display-5 fst-italic my-5">Title : ${_movieItem.Title}</h2>
             <h5>Diractor: ${_movieItem.Director}</h5>
             <h5>IMDB: ${_movieItem.imdbRating}</h5>
             <h5>Language: ${_movieItem.Language}</h5>
             <h5>First release: ${_movieItem.Released} </h5>
-            <h6 class="pb-5">Duration: ${_movieItem.Runtime}</h6>
+            <h6 class="pt-5">Duration: ${_movieItem.Runtime}</h6>
             <p>${_movieItem.Plot}</p>
             </div>
-            <div class="imageBox col justify-content-md-end h-100">
-                <img class="" src="${_movieItem.Poster}"
-                    alt="${_movieItem.Title}">
-                    </div>
           </div>
     `
   // imdbRating Year Writer Title
