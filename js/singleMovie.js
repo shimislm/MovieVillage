@@ -8,7 +8,7 @@ const doApi = () => {
   // .html?id=
   let idMovie = urlParams.get("id");
   if (idMovie) {
-    let url = `http://www.omdbapi.com/?i=${idMovie}&apikey=5a292f28`;
+    let url = `http://www.omdbapi.com/?i=${idMovie}&apikey=26dac8a0`;
     axios.get(url)
     .then(resp => updateUi(resp.data))
   }
