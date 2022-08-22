@@ -7,7 +7,6 @@ const doApi = () => {
   const urlParams = new URLSearchParams(window.location.search);
   // .html?id=
   let idMovie = urlParams.get("id");
-  console.log(idMovie)
   if (idMovie) {
     let url = `http://www.omdbapi.com/?i=${idMovie}&apikey=5a292f28`;
     axios.get(url)
