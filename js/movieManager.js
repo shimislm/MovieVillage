@@ -1,7 +1,7 @@
 import AllMovies from "./allMovie.js";
 const movie_ar =[];
 export const getApi = searchValue =>{
-    let url = `http://www.omdbapi.com/?s=${searchValue}&apikey=26dac8a0`
+    let url = `https://www.omdbapi.com/?s=${searchValue}&apikey=26dac8a0`
     fetch(url)
     .then(resp => resp.json())
     .then(data => {
